@@ -1,18 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+Using UnityEngine;
+Using System.Collections;
 
-public class AnotherScript : MonoBehaviour
+public class AnotherClass
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public int apples;
+    public int bananas;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
