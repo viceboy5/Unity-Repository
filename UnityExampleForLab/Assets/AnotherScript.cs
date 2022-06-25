@@ -1,5 +1,5 @@
-Using UnityEngine;
-Using System.Collections;
+using UnityEngine;
+using System.Collections;
 
 public class AnotherClass
 {
