@@ -4,15 +4,30 @@ using UnityEngine;
 
 public class UpdateAndFixedUpdate : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private float fixedUpdateTimer;
+    private float UpdateTimer;
+
+    
+    void FixedUpdate()
+        // Called every Physics step
+        //FixedUpdate intervals are consistent
+        //Used for regular updates such as:
+        //Adjusting physics (Ridgidbody) objects
     {
-        
+        Debug.Log("Fixedupdate time :" + Time.deltaTime);
     }
 
-    // Update is called once per frame
+   
     void Update()
+
+    // Called every frame
+    // Used for regular updates such as:
+    //Moving non-physics objects
+    //Simple Timers
+    //Receibing Input
+
+    //Update interval times vary
     {
-        
+        Debug.Log("Update time :" + Time.deltaTime);
     }
 }
