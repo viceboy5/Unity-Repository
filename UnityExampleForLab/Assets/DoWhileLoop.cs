@@ -7,7 +7,7 @@ public class DoWhileLoop : MonoBehaviour
     {
         bool shouldContinue = false;
 
-        DoWhileLoop
+        do
         {
             print("Hello World");
         }
