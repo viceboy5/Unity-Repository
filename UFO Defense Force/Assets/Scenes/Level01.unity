@@ -156,7 +156,6 @@ MonoBehaviour:
   - {fileID: 1142282256847177950, guid: 09d31e8c1c590b647ac54a5438bd9236, type: 3}
   - {fileID: 4716107719960348837, guid: 44906bdb22f7cea4ab4248ed3f8ccad5, type: 3}
   - {fileID: 3126593826308062703, guid: 199d8a0a3db550545b8e952c4e69101e, type: 3}
-  ufoIndex: 2
 --- !u!4 &403241476
 Transform:
   m_ObjectHideFlags: 0
@@ -380,7 +379,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontalInput: 0
   speed: 25
-  xRange: 40
+  xRange: 25
   blaster: {fileID: 1233577660}
   lazerBolt: {fileID: 6632299140462524630, guid: 060e87944e336d642b2641d75d0c314e, type: 3}
 --- !u!54 &772996252
@@ -428,7 +427,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7122068748531096769, guid: 851c45c49a0e9dd40bded3f3fb032484, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 27.98
+      value: 16.7
       objectReference: {fileID: 0}
     - target: {fileID: 7122068748531096769, guid: 851c45c49a0e9dd40bded3f3fb032484, type: 3}
       propertyPath: m_LocalRotation.w
@@ -515,8 +514,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 15
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -540,7 +539,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 30, z: 0}
+  m_LocalPosition: {x: 0, y: 31.79, z: -2.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -597,7 +596,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerUp: {fileID: 392472085086032792, guid: 851c45c49a0e9dd40bded3f3fb032484, type: 3}
   spawnTime: 2
-  xRange: 40
+  xRange: 25
   speed: 10
   powerUpSpawner: {fileID: 1555601516}
 --- !u!1 &1834785409
