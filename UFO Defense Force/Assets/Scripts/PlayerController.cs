@@ -44,7 +44,6 @@ public class PlayerController : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Destroy(other.gameObject);
-        Debug.Log("Added to Inventory");
     }
 
 
