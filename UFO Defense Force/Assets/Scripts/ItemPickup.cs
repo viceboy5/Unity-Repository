@@ -15,4 +15,10 @@ public class ItemPickup : MonoBehaviour
     {
         
     }
+
+    private void OnTriggerEnter(Collider Player)
+    {
+        Destroy(gameObject);
+        Debug.Log("Added to Inventory");
+    }
 }
