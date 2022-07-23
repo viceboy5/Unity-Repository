@@ -8,6 +8,13 @@ public class GameManager : MonoBehaviour
 
     private GameObject gameOverText;
 
+    
+    public AudioSource GameOver;
+    public AudioSource BackgroundMusic;
+    public AudioClip EndGameSound;
+    public float Volume;
+    public bool alreadyPlayed = false;
+
     private void Awake()
     {
         Time.timeScale = 1;
@@ -32,7 +39,17 @@ public class GameManager : MonoBehaviour
 
     public void EndGame()
     {
-        gameOverText.gameObject.SetActive(true);
+        
+        if (!alreadyPlayed)
+        {
+            GameOver.PlayOneShot(EndGameSound, Volume);
+            Debug.Log("Played");
+            alreadyPlayed = true;
+        }
+        gameOverText.gameObject.SetActive(true); //Activate Game Over text
         Time.timeScale = 0;  // Freeze Time
+        BackgroundMusic.Stop();
     }
+
+
 }
