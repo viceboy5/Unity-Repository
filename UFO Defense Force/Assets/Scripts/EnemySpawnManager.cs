@@ -19,16 +19,9 @@ public class EnemySpawnManager : MonoBehaviour
         InvokeRepeating("SpawnRandomUFO", startDelay, spawnInterval);
     }
 
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void SpawnRandomUFO()
     {
-        Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
+        Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 1, spawnPosZ);
         int ufoIndex = Random.Range(0, ufoPrefabs.Length); // Picks a random UFO from the array
         Instantiate(ufoPrefabs[ufoIndex], spawnPos, ufoPrefabs[ufoIndex].transform.rotation); //Spawns an indexed UFO from the array at a random location on the X-axis
     }
