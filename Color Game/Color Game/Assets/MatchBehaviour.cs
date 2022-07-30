@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class MatchBehaviour : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public ID idObj;
+    private void OnTriggerEnter(Collider other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        var tempObj = other.GetComponent<IDContainerBehaviour>();
+        if (tempObj == null)
+            return;
+            
+        var otherID = tempObj.idObj;
+        if (otherID == idObj)
+        {
+            Debug.Log("Matched");
+        }
+        else
+        {
+            Debug.Log("No Match");
+        }
     }
 }
