@@ -1010,6 +1010,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  noMatchDelayedEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!54 &1415263940
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1195,7 +1198,6 @@ GameObject:
   - component: {fileID: 1536392020}
   - component: {fileID: 1536392019}
   - component: {fileID: 1536392018}
-  - component: {fileID: 1536392021}
   m_Layer: 5
   m_Name: HighScoreNum
   m_TagString: Untagged
@@ -1240,7 +1242,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 11400000, guid: 696ae6eb93e52ae4caaf6f2bb0a4a5a7, type: 2}
         m_TargetAssemblyTypeName: IntData, Assembly-CSharp
-        m_MethodName: SetValue
+        m_MethodName: CompareValue
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: 379d6f4ce90c2fb43b536d1824d38e4b, type: 2}
@@ -1304,27 +1306,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1536392016}
   m_CullTransparentMesh: 1
---- !u!114 &1536392021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1536392016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32f3983572c18ca4d9637b112cf6c095, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  awakeEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  disableEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &1645007793
 GameObject:
   m_ObjectHideFlags: 0
