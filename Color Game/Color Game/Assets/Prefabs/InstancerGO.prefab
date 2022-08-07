@@ -97,4 +97,4 @@ MonoBehaviour:
         m_CallState: 2
   canRun: 0
   counterNum: {fileID: 0}
-  seconds: 1
+  seconds: 2

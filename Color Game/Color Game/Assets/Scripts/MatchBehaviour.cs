@@ -8,7 +8,7 @@ public class MatchBehaviour : MonoBehaviour
     public UnityEvent matchEvent, noMatchEvent, noMatchDelayedEvent;
     private IEnumerator OnTriggerEnter(Collider other)
     {
-        var tempObj = other.GetComponent<IDContainerBehaviour>();
+        var tempObj = other.GetComponent<ColorMatchBehaviour>();
         if (tempObj == null)
             yield break;
             
@@ -16,12 +16,14 @@ public class MatchBehaviour : MonoBehaviour
         if (otherID == idObj)
         {
             matchEvent.Invoke();
+            Debug.Log("Match Made");
         }
         else
         {
             noMatchEvent.Invoke();
             yield return new WaitForSeconds(0.5f);
             noMatchDelayedEvent.Invoke();
+            Debug.Log("No Match Made");
         }
     }
 }
