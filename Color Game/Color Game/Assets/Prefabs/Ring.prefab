@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: -6534839219283973667}
   - component: {fileID: -6554403421985000493}
   - component: {fileID: 7834963038374441710}
+  - component: {fileID: -4079286732042573165}
   m_Layer: 7
   m_Name: Ring
   m_TagString: Untagged
@@ -213,6 +214,34 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   colorIDDataListObj: {fileID: 11400000, guid: 03aaed65f2a759948928ffacb108e44c, type: 2}
+--- !u!114 &-4079286732042573165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2705824615008937791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 547588ed33092de448423c37cba63a2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameActionObj: {fileID: 11400000, guid: 27ceb92547156234baf9ee08ec4200de, type: 2}
+  onRaiseEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8988474005519207819}
+        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5478825038482564829
 GameObject:
   m_ObjectHideFlags: 0
@@ -224,6 +253,7 @@ GameObject:
   - component: {fileID: 4652901443483522099}
   - component: {fileID: 8696206988366270952}
   - component: {fileID: 4707767673262796260}
+  - component: {fileID: 4020287584903487642}
   m_Layer: 7
   m_Name: HiddenDot
   m_TagString: Untagged
@@ -310,3 +340,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db485381b54d0fa40b870e7b54cb738c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4020287584903487642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5478825038482564829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 547588ed33092de448423c37cba63a2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameActionObj: {fileID: 11400000, guid: 27ceb92547156234baf9ee08ec4200de, type: 2}
+  onRaiseEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8696206988366270952}
+        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
